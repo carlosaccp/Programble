@@ -5,7 +5,8 @@ In 1 : Plot x and y data points
 Out 1 : 
 
 **snippets**: { import matplotlib.pyplot as plt
-plt.plot(x,y) }
+
+                plt.plot(x,y) }
                 
 **variables**: x , y , marker, color, more...
 
