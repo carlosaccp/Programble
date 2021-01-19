@@ -8,6 +8,10 @@ Out 1 :
 
     { import matplotlib.pyplot as plt
       plt.plot(x,y) }
+
+**graph**:
+
+    { insert picture of graph }
                 
 **variables**: x , y , marker, color, more...
 
@@ -23,6 +27,10 @@ Out 2 :
 **snippets**: 
 
     {plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x))) Comment : "Using np.unique(x) instead of x handles the case where x isn't sorted or has duplicate values."}
+    
+**graph**: 
+
+    { insert picture of graph }
 
 **variables**: x , y , degree, more...
 
