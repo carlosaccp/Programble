@@ -26,7 +26,8 @@ Out 2 :
 
 **snippets**: 
 
-    {plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x))) Comment : "Using np.unique(x) instead of x handles the case where x isn't sorted or has duplicate values."}
+    {import numpy as np
+     plt.plot(np.unique(x), np.poly1d(np.polyfit(x, y, 1))(np.unique(x))) Comment : "Using np.unique(x) instead of x handles the case where x isn't sorted or has duplicate values."}
     
 **graph**: 
 
