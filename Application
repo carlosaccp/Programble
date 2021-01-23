@@ -1,4 +1,5 @@
 What problem are you solving? (100 words max)
+
 Learning to code and developing software can be a daunting task. 
 Indeed whether it is through the difficulty of properly tracking every component of the project, choosing the right modules and functions to use, or anticipating bugs there is a great barrier to entry in the field of programming.
 Additionally even experienced developers face such difficulties and spend a lot of resources on fixing issues and searching information on external sources integrated into their code.
@@ -6,6 +7,7 @@ The main source of these problems is the lack of an intuitive interface for the 
 
 
 What is your solution to this problem? (100 words max)
+
 We aim to develop a content curation algorithmic program focused on gathering documentation from many other modules, and rewrite them into a very easy to read format on a website.
 Alongside each function, we will not only provide descriptions of its inputs and outputs, but also include example uses, its time complexity, and common issues, among other things. 
 Also we plan to implement a very good search function, where you can type in a functionality that you want, and different functions that are related would come up.
@@ -13,7 +15,9 @@ Also we plan to implement a very good search function, where you can type in a f
 
 Give us more detail about what you have done up to now on this project (eg: talked to customers, built a prototype...) (100 words max)
 
-
-
+We have interviewed around 20 potential customers (university students who have programming in their courses) and received crucial information that confirms the assumptions behind our start-up idea. 
+We introduced our idea and received feedback from customers, which will help us further refine our start-up plan and our revenue model. 
+In addition, we built a static prototype of our website to demonstrate the user-interface and overall functionality of our product. 
+The prototype includes the initial layout of our website, possible searches and results, and features such as search suggestions and description of the code examples.  
 
 
