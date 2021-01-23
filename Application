@@ -8,7 +8,7 @@ The main source of these problems is the lack of an intuitive interface for the 
 
 What is your solution to this problem? (100 words max)
 
-We aim to develop a content curation algorithmic program focused on gathering documentation from many other modules, and rewrite them into a very easy to read format on a website.
+We aim to develop a content curation algorithmic program focused on gathering documentation from many other modules, and rewriting them into a very easy to read format on a website.
 Alongside each function, we will not only provide descriptions of its inputs and outputs, but also include example uses, its time complexity, and common issues, among other things. 
 Also we plan to implement a very good search function, where you can type in a functionality that you want, and different functions that are related would come up.
 
