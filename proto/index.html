@@ -2,33 +2,174 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="src/favicon_package_v0.16/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon_package_v0.16/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon_package_v0.16/favicon-16x16.png">
+        <link rel="manifest" href="src/favicon_package_v0.16/site.webmanifest">
+        <link rel="mask-icon" href="src/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
         <script src="https://kit.fontawesome.com/6543ccb762.js" crossorigin="anonymous"></script>
         <meta charset="utf-8">
-        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <title>Programable</title>
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class = "text-center"><h1>Programble <i class="fas fa-book-reader"></i></h1></header>
+        <header class = "text-center"><h1>
+          <div style="clear: both" class = "mt-3">
+            Programable<span class = "dot">▮</span>
+        </div>
+        
+        </h1></header>
         <div style= "background:transparent !important" class = "jumbotron">
                 <div class="input-group rounded">
-                    <input type="search"  class="search-query form-control rounded" placeholder="Search..." aria-label="Search"
+                    <input type="search"  class="search-query form-control rounded" placeholder="Search for answers..." aria-label="Search"
                       aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                      <button class="input-group-text border-0"><i class="fas fa-search"></i></button>
-                    </span>
+                      <span class = "search-query"><button onClick = "setTimeout('hider()',200)" class="btn btn-light btn btn-block"><i class="fas fa-search"></i></button></span>
+                    
                   </div>
             </div>
         </div>
-        <hr>
+  
+        <div class="container" id = "fader">
+          <div class="row p-3">
+            <div class="col-8 text-center">
+              <h2>
+                Code</button>
+
+
+              </h2>
+                <div class = "container">
+                  <img class = "rounded zoom p-4" src = "src/carbon.png" width = "50%">
+                  
+                  <div class="container underimg">
+                    <button class = "btn btn-lg" onClick="paste()"><i class="far fa-clipboard"></i></button>
+                  </div>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+              <h2>
+                Description
+              </h2>
+              <div class = "container"></div>
+              <ul class = "list-group">
+              <li class = "list-group-item text-left">
+                x = input x values (list)
+              </li>
+              <li class = "list-group-item text-left">
+                y = input y values (list)
+              </li>
+              <li class = "list-group-item text-left">
+                plt.plot = plots the graph
+              </li>
+              <li class = "list-group-item text-left">
+                plt.xlabel = labels the x axis
+              </li>
+              <li class = "list-group-item text-left">
+                plt.ylabel = labels the y axis
+              </li>
+              <li class = "list-group-item text-left">
+                plt.show = shows the graph
+              </li>
+            </ul>
+            </div>
+          </div>
+          <div class="row p-3">
+            <div class="col-8 text-center">
+              <h2>
+                Output (Graph)
+              </h2>
+             <div class = "container p-4">
+               <img class = "rounded zoom" src = "src/graph.png" width = "50%">
+             </div>
+            </div>
+            <div class="col-4 text-center">
+              <h2>
+                Suggested Additions
+              </h2>
+              <div class = "container"></div>
+              <ul class = "list-group">
+              <a href="">
+                <li class = "list-group-item text-left zoom">
+                  Change axis increments 
+                </li>
+              </a>
+              <a href="">
+                <li class = "list-group-item text-left zoom">
+                  Change graph type 
+                </li>
+              </a>
+              <a href="">
+                <li class = "list-group-item text-left zoom">
+                  Change colour of lines 
+                </li>
+              </a>
+            </ul>
+            </div>
+          </div>
+          <div class = "row p-3"> 
+            <div class="col">
+              <h3 class= "text-left cmist">
+                Common Mistakes
+              </h3>
+              <div class = "container">
+                <ul class = "list-group">
+                <li class = "list-group-item text-left">
+                  Make sure x and y are lists 
+                </li>
+                <li class = "list-group-item text-left">
+                  Make sure to show your graph with plt.show() at the end
+                </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class = "row p-3"> 
+            <div class="col">
+              <h3 class= "text-left cmist">
+                Related Searches
+              </h3>
+              <div class = "container">
+                <ul class = "list-group">
+                <a href="">
+                  <li class = "list-group-item text-left zoom">
+                    How to use numpy to make a list? 
+                  </li>
+                </a>
+                <a href="">
+                  <li class = "list-group-item text-left zoom">
+                    How to plot multiple variables at once?
+                  </li>
+                </a>
+                <a href="">
+                  <li class = "list-group-item text-left zoom">
+                    How to plot with categorical variables?
+                  </li>
+                </a>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <footer>
+            <div class="float-left footdiv mb-3">Programable Mark 1</div>
+            <div class="float-right footdiv mb-3">&copy;2021 ICMLTeam</div>
+            
+          </footer>
+        </div>
+
         
-        <script src="" async defer></script>
+        <script src="src/script.js"></script>
     </body>
 </html>
