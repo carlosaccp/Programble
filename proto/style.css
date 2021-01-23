@@ -1,0 +1,28 @@
+@font-face {font-family: "Modeseven"; 
+    src: url('src/Modeseven-L3n5.ttf');
+ }
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+  }
+  .box{
+    width: 100%;
+    text-align:center;
+}
+input.search-query{
+background-color: black !important;
+color: rgb(20, 148, 20);
+font-family: 'Modeseven'!important;
+}
+input.search-query:focus{
+    color: rgb(20, 148, 20);
+    font-family: 'Modeseven';
+    }
+
+input.search-query::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(20, 148, 20);
+        font-family: 'Modeseven';
+      }
