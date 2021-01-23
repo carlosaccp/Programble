@@ -1,6 +1,54 @@
 @font-face {font-family: "Modeseven"; 
     src: url('src/Modeseven-L3n5.ttf');
  }
+
+@keyframes blink {
+  0%,50% {
+    opacity: 0;
+  }
+  51%,100% {
+    opacity: 1;
+  }
+}
+a{
+  color: black;
+}
+
+.footdiv{
+  opacity: 0.5;
+}
+.highlight:hover{
+  font-weight: bold;
+}
+a:hover{
+  color:rgb(20, 148, 20);
+  text-decoration: none;
+}
+.zoom{
+  transition: transform .2s;
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.cmist{
+  position: relative;
+  left: 20px; /* This will move it 20px to the right */
+}
+.dot {
+  animation: blink 1.5s infinite;
+}
+body {
+  background-color: rgb(229, 226, 226);
+}
+.underimg{
+  position: relative;
+  left: -180px;
+  top: -60px;
+}
+header{
+  font-family: "Anonymous Pro";
+}
 .vertical-center {
     min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
     min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -22,7 +70,12 @@ input.search-query:focus{
     font-family: 'Modeseven';
     }
 
+.threefour{
+  background-color: green;
+}
+
 input.search-query::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: rgb(20, 148, 20);
         font-family: 'Modeseven';
+        opacity: 0.5
       }
